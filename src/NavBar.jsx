@@ -277,6 +277,25 @@ export default function HideAppBar(props) {
                             >
                       <ListItemText><Typography variant='h4'><span
                       >India News</span></Typography></ListItemText>
+                            </ListItem> <ListItem
+                                button
+                                className='card1'
+                                component={RouterLink}
+                                to="/Live"
+                                onClick={closeMenu}
+                                sx={{border:'2px dotted pink',
+                                    display: 'flex',
+                                    flexDirection: 'column',
+                                    alignItems: 'center',
+                                    '&:hover': {
+                                        backgroundColor: 'pink',
+                                        transition: 'background-color 0.3s',
+                                        borderRadius: '90px 0px 90px 0px'
+                                    },
+                                }}
+                            >
+                      <ListItemText><Typography variant='h4'><span
+                      >Live News</span></Typography></ListItemText>
                             </ListItem>
                         </List>
                     </Drawer>
